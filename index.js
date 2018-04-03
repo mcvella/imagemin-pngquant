@@ -3,7 +3,7 @@ const execa = require('execa');
 const isPng = require('is-png');
 const isStream = require('is-stream');
 const isLambda = require('is-lambda')
-const pngquant = isLambda ? "./pngquant" : require('../aws-bin/pngquant-bin');
+const pngquant = isLambda ? "./pngquant" : require('../aws-bin/pngquant');
 
 module.exports = opts => input => {
 	opts = Object.assign({}, opts);
