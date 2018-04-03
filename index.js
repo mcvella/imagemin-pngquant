@@ -4,7 +4,7 @@ const isPng = require('is-png');
 const isStream = require('is-stream');
 const isLambda = require('is-lambda');
 const path = require('path');
-const pngquant = isLambda ? path.resolve(__dirname, '/aws-bin/pngquant') : require('pngquant-bin');
+const pngquant = isLambda ? path.join(__dirname, '/aws-bin/pngquant') : require('pngquant-bin');
 
 module.exports = opts => input => {
 	opts = Object.assign({}, opts);
