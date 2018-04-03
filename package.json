@@ -27,8 +27,7 @@
 		"test": "xo && ava"
 	},
 	"files": [
-		"index.js",
-		"pngquant"
+		"index.js"
 	],
 	"keywords": [
 		"compress",
